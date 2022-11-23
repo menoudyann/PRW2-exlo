@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Exercise;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
 class ExerciseController extends Controller
 {
@@ -26,6 +27,7 @@ class ExerciseController extends Controller
     public function create()
     {
         return view('exercises.create');
+        
     }
 
     /**
@@ -37,6 +39,7 @@ class ExerciseController extends Controller
     public function store(Request $request)
     {
         $exercises = Exercise::create($request->all());
+        return redirect()->route('exercises.index');
     }
 
     /**
@@ -48,5 +51,6 @@ class ExerciseController extends Controller
     public function destroy(Exercise $exercise)
     {
         $exercise->delete();
+        return redirect()->route('exercises.index');
     }
 }

@@ -1,5 +1,5 @@
 <h1>Create</h1>
-<form method="post" class="form-horizontal" role="form" action="{{route('exercises.store')}}">
+<form method="post" class="form-horizontal" role="form" action="{{ route('exercises.store') sss}}">
   @csrf
   <label for="title">Title:</label><br><br>
   <input type="text" id="title" name="title" value="Title"><br><br>

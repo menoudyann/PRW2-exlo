@@ -17,4 +17,11 @@ class Exercise extends Model
     protected $casts = [
         'state' => ExerciseState::class,
     ];
+
+
+    public function fields()
+    {
+        return $this->hasMany(Field::class);
+    }
+
 }
