@@ -14,10 +14,12 @@ class FieldController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Exercise $exercise)
     {
-        $fields = Exercise::get
-
+        $fields = $exercise->fields();
+        return view('fields.index', ['exercise' => $exercise, 'fields' => $fields]);
+        // Same shit
+        // return view('fields.index', compact('exercise','fields')); 
     }
 
     /**
@@ -38,8 +40,7 @@ class FieldController extends Controller
      */
     public function store(Request $request, $exercise_id)
     {
-        $exercise = Exercise::findOrFail($exercise_id);
-        $exercise->field()->create($request->all());
+        // Code
     }
 
 
@@ -49,9 +50,9 @@ class FieldController extends Controller
      * @param  \App\Models\Field  $field
      * @return \Illuminate\Http\Response
      */
-    public function edit(Field $field)
+    public function edit(Exercise $exercise, Field $field)
     {
-        //
+        // Code
     }
 
     /**
@@ -61,9 +62,9 @@ class FieldController extends Controller
      * @param  \App\Models\Field  $field
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Field $field)
+    public function update(Request $request, Exercise $exercise, Field $field)
     {
-        //
+        // Code
     }
 
     /**
@@ -74,6 +75,6 @@ class FieldController extends Controller
      */
     public function destroy(Field $field)
     {
-        //
+        // code 
     }
 }

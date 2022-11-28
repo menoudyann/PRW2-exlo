@@ -16,4 +16,4 @@ use App\Http\Controllers\FieldController;
 */
 
 Route::resource('exercises', ExerciseController::class)->except(['show', 'edit', 'update']);
-Route::resource('fields', FieldController::class)->except(['show']);
+Route::resource('exercises.fields', FieldController::class)->except(['show']);
