@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 enum FieldValueKind {
@@ -18,6 +17,12 @@ class Field extends Model
     ];
 
     protected $fillable = ['question', 'value_kind'];
+
+
+    public function exercise()
+    {
+        return $this->belongsTo(Exercise::class);
+    }
 
 
 }

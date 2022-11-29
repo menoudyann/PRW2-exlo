@@ -16,10 +16,8 @@ class FieldController extends Controller
      */
     public function index(Exercise $exercise)
     {
-        $fields = $exercise->fields();
-        return view('fields.index', ['exercise' => $exercise, 'fields' => $fields]);
-        // Same shit
-        // return view('fields.index', compact('exercise','fields')); 
+        $fields = $exercise->fields;
+        return view('fields.index', compact('exercise', 'fields'));
     }
 
     /**
@@ -27,9 +25,9 @@ class FieldController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Exercise $exercise)
     {
-        return view('exercises.fields.index');
+        return view('fields.create', ['exercise' => $exercise, 'value_kind_cases' => (new Field)->getCasts()['value_kind']::cases()]);
     }
 
     /**
@@ -38,9 +36,10 @@ class FieldController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, $exercise_id)
+    public function store(Request $request, Exercise $exercise)
     {
-        // Code
+        $exercise->fields()->create($request->all());
+        return redirect()->route('exercises.fields.index', $exercise);
     }
 
 
@@ -73,7 +72,7 @@ class FieldController extends Controller
      * @param  \App\Models\Field  $field
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Field $field)
+    public function destroy(Exercise $exercise, Field $field)
     {
         // code 
     }
