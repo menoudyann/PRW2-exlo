@@ -5,7 +5,7 @@
         {{ $field->question }}
         <br>
         {{ $field->value_kind->name }}
-        <form action="{{ route('exercises.fields.destroy', compact('exercise', 'fields')) }}" method="POST">
+        <form action="{{ route('exercises.fields.destroy', compact('exercise', 'field')) }}" method="POST">
             @method('DELETE')
             @csrf
             <button>Suprrimer</button>
