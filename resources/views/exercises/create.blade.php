@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 <h1>Create</h1>
 <form method="post" class="form-horizontal" role="form" action="{{ route('exercises.store') }}">
   @csrf
@@ -7,3 +10,4 @@
       <button type="submit" class="btn btn-lg btn-success btn-block">Create Exercise</button>
     </div>
 </form> 
+@endsection

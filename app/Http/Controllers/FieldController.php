@@ -51,7 +51,7 @@ class FieldController extends Controller
      */
     public function edit(Exercise $exercise, Field $field)
     {
-        // Code
+        
     }
 
     /**
@@ -63,7 +63,7 @@ class FieldController extends Controller
      */
     public function update(Request $request, Exercise $exercise, Field $field)
     {
-        // Code
+        
     }
 
     /**

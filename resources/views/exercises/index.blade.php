@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 <h1>Exercises</h1>
 <ul>
     @foreach ($exercises as $exercise)
@@ -11,3 +14,4 @@
     </li>
     @endforeach
 </ul>
+@endsection

@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 <h1>Exercise {{ $exercise->title }}</h1>
 <form action="{{ route('exercises.fields.store', $exercise) }}" method="POST">
     @csrf
@@ -10,3 +13,4 @@
     </select>
     <button>Ajouter</button>
 </form>
+@endsection

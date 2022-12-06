@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 <h1>Exercise {{ $exercise->title }}</h1>
 <ul>
     @foreach ($fields as $field)
@@ -14,3 +17,4 @@
     @endforeach
 </ul>
 <a href="{{ route('exercises.fields.create', $exercise) }}">Add new field</a>
+@endsection
