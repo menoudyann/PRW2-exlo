@@ -3,6 +3,8 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Validation\ValidatesRequests;
+use Watson\Validating\ValidatingTrait;
 
 enum ExerciseState {
     case building;
@@ -12,6 +14,12 @@ enum ExerciseState {
 
 class Exercise extends Model
 {
+    use ValidatingTrait;
+
+    protected $rules = [
+		'title'   => 'required|unique:exericses|max:10',
+	];
+
     protected $fillable = ['title'];
     
     protected $casts = [

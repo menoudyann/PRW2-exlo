@@ -8063,6 +8063,63 @@
             "install-path": "../voku/portable-ascii"
         },
         {
+            "name": "watson/validating",
+            "version": "7.0.0",
+            "version_normalized": "7.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dwightwatson/validating.git",
+                "reference": "d93ec043fb2dc4cc569b63fbe95cb7231b4f788f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dwightwatson/validating/zipball/d93ec043fb2dc4cc569b63fbe95cb7231b4f788f",
+                "reference": "d93ec043fb2dc4cc569b63fbe95cb7231b4f788f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "~8.0|~9.0",
+                "illuminate/database": "~8.0|~9.0",
+                "illuminate/events": "~8.0|~9.0",
+                "illuminate/support": "~8.0|~9.0",
+                "illuminate/validation": "~8.0|~9.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.4.4",
+                "phpunit/phpunit": "~9.0"
+            },
+            "time": "2022-02-08T23:28:17+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Watson\\Validating\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dwight Watson",
+                    "email": "dwight@studiousapp.com"
+                }
+            ],
+            "description": "Eloquent model validating trait.",
+            "keywords": [
+                "eloquent",
+                "laravel",
+                "validation"
+            ],
+            "support": {
+                "issues": "https://github.com/dwightwatson/validating/issues",
+                "source": "https://github.com/dwightwatson/validating/tree/7.0.0"
+            },
+            "install-path": "../watson/validating"
+        },
+        {
             "name": "webmozart/assert",
             "version": "1.11.0",
             "version_normalized": "1.11.0.0",

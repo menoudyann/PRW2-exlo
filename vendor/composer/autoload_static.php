@@ -45,6 +45,7 @@ class ComposerStaticInit5ebd123fc513ee75dc3e0672eeb64595
         array (
             'Whoops\\' => 7,
             'Webmozart\\Assert\\' => 17,
+            'Watson\\Validating\\' => 18,
         ),
         'T' => 
         array (
@@ -181,6 +182,10 @@ class ComposerStaticInit5ebd123fc513ee75dc3e0672eeb64595
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Watson\\Validating\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/watson/validating/src',
         ),
         'TijsVerkoyen\\CssToInlineStyles\\' => 
         array (
@@ -508,6 +513,7 @@ class ComposerStaticInit5ebd123fc513ee75dc3e0672eeb64595
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\ExerciseController' => __DIR__ . '/../..' . '/app/Http/Controllers/ExerciseController.php',
+        'App\\Http\\Controllers\\FieldController' => __DIR__ . '/../..' . '/app/Http/Controllers/FieldController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -5642,6 +5648,13 @@ class ComposerStaticInit5ebd123fc513ee75dc3e0672eeb64595
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
+        'Watson\\Validating\\Injectors\\UniqueInjector' => __DIR__ . '/..' . '/watson/validating/src/Injectors/UniqueInjector.php',
+        'Watson\\Validating\\Injectors\\UniqueWithInjector' => __DIR__ . '/..' . '/watson/validating/src/Injectors/UniqueWithInjector.php',
+        'Watson\\Validating\\ValidatingInterface' => __DIR__ . '/..' . '/watson/validating/src/ValidatingInterface.php',
+        'Watson\\Validating\\ValidatingModel' => __DIR__ . '/..' . '/watson/validating/src/ValidatingModel.php',
+        'Watson\\Validating\\ValidatingObserver' => __DIR__ . '/..' . '/watson/validating/src/ValidatingObserver.php',
+        'Watson\\Validating\\ValidatingTrait' => __DIR__ . '/..' . '/watson/validating/src/ValidatingTrait.php',
+        'Watson\\Validating\\ValidationException' => __DIR__ . '/..' . '/watson/validating/src/ValidationException.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
         'Webmozart\\Assert\\InvalidArgumentException' => __DIR__ . '/..' . '/webmozart/assert/src/InvalidArgumentException.php',
         'Webmozart\\Assert\\Mixin' => __DIR__ . '/..' . '/webmozart/assert/src/Mixin.php',

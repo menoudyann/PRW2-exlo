@@ -1,5 +1,11 @@
 @extends('layouts.app')
 
+@section('links')
+<meta charset="utf-8">
+<link rel="stylesheet" href="">
+
+@endsection
+
 @section('content')
 <h1>Exercises</h1>
 <ul>

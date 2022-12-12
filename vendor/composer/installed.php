@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'laravel/laravel',
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
-        'reference' => '53003fd8709bfa334cc631ba8e99c0ebe0d8fb75',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '11417ef3d04ebeededcb18e85005c2a0a4e32930',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -365,9 +365,9 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => '53003fd8709bfa334cc631ba8e99c0ebe0d8fb75',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '11417ef3d04ebeededcb18e85005c2a0a4e32930',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -709,8 +709,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0|3.0',
-                1 => '1.0.0 || 2.0.0 || 3.0.0',
+                0 => '1.0.0 || 2.0.0 || 3.0.0',
+                1 => '1.0|2.0|3.0',
             ),
         ),
         'psr/simple-cache' => array(
@@ -1247,6 +1247,15 @@
             'reference' => 'b56450eed252f6801410d810c8e1727224ae0743',
             'type' => 'library',
             'install_path' => __DIR__ . '/../voku/portable-ascii',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'watson/validating' => array(
+            'pretty_version' => '7.0.0',
+            'version' => '7.0.0.0',
+            'reference' => 'd93ec043fb2dc4cc569b63fbe95cb7231b4f788f',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../watson/validating',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
