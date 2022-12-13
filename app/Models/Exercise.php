@@ -17,7 +17,7 @@ class Exercise extends Model
     use ValidatingTrait;
 
     protected $rules = [
-		'title'   => 'required|unique:exericses|max:10',
+		'title'   => 'required|unique:exercises,title|max:10',
 	];
 
     protected $fillable = ['title'];
